@@ -60,7 +60,6 @@ Email Send By Template using json request and json like,
 													"binding": "LiabilityInfo.AuthToken1",
 													"label"  : "Auth Token",
 													"lg": 6
-
 												}
 											]
 										}
