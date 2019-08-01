@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   
+    <style type="text/css">
+
+
+body {
+        background-color: #f6f6f6;
+        margin: 0 !important;
+        padding: 0;
+}
+table {
+		 border-spacing: 0;
+         font-family: sans-serif;
+         color: #333333;
+	     table-layout: fixed;
+}
+td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+}
+
+img {
+        border: none;
+        -ms-interpolation-mode: bicubic
+}
+div[style*="margin: 16px 0"] { 
+    margin:0 !important;
+}
+.wrapper {
+     display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: 580px;
+}
+.webkit {
+   box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 580px;
+        padding: 10px;
+}
+.outer {
+ background: #ffffff;
+        border-radius: 3px;
+        width: 100%; 
+}
+.viewheader {
+		clear: both;
+	    margin-top: 10px;
+	    text-align: center;
+	    width: 100%;
+      }
+
+.content-block {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.viewfooter {
+	clear: both;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%; 
+}
+.footer td,
+.footer p,
+.footer span,
+.footer a {
+	color: #999999;
+	font-size: 12px;
+	text-align: center; 
+}
+.powered-by a {
+    text-decoration: none; 
+}
+
+
+
+.twelve-column{
+text-align: center;
+    font-size: 0;
+}
+.twelve-column .xs-1,.twelve-column .md-1,.twelve-column .lg-1{
+width:8.33%;
+}
+.twelve-column .xs-2,.twelve-column .md-2,.twelve-column .lg-2{
+width:16.66%;
+}
+.twelve-column .xs-3,.twelve-column .md-3,.twelve-column .lg-3{
+width:25%;
+}
+.twelve-column .xs-4,.twelve-column .md-5,.twelve-column .lg-6{
+width:33.33%;
+}
+.twelve-column .xs-5,.twelve-column .md-5,.twelve-column .lg-5{
+width:41.66%;
+}
+.twelve-column .xs-6,.twelve-column .md-6,.twelve-column .lg-6{
+width:50%;
+}
+.twelve-column .xs-7,.twelve-column .md-7,.twelve-column .lg-7{
+width:58.33%;
+}'
+.twelve-column .xs-8,.twelve-column .md-8,.twelve-column .lg-8{
+width:25%;
+}
+.twelve-column .xs-9,.twelve-column .md-9,.twelve-column .lg-9{
+width:75%;
+}
+.twelve-column .xs-10,.twelve-column .md-10,.twelve-column .lg-10{
+width:83.33%;
+}
+.twelve-column .xs-11,.twelve-column .md-11,.twelve-column .lg-11{
+width:91.66%;
+}
+.twelve-column .xs-12,.twelve-column .md-12,.twelve-column .lg-12{
+width:100%;
+}
+.twelve-column .xs-6 .column, .twelve-column .md-6 .column  .twelve-column .lg-6 .column {
+	width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.inner{
+font-size: 20px;
+}
+
+.twelve-column .contents {
+font-size: 14px;
+    text-align: left;
+	width: 100%;
+overflow: hidden; 
+ overflow-wrap: break-word;
+}
+.twelve-column img {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+}
+.twelve-column .text {
+    padding-top: 10px;
+}
+.col-1{
+width: 8.33%;
+max-width:50px;
+}
+
+/*  PRESERVE THESE STYLES IN THE HEAD */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+</style>
+    
+</head>
+<body>
+    <center class="wrapper">
+       <span class="viewheader" th:text="${main.pageName}"/> 
+        <div class="webkit">
+
+<!--[if (gte mso 9)|(IE)]>
+<table class="outer" align="center">
+<tr>
+<td>
+<![endif]-->
+<table class="outer" align="center">
+	<tr>
+		<td class="twelve-column">
+			<table width="100%">
+			 <colgroup>
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+				<col class="col-1">
+			  </colgroup>
+			  
+				<tr>
+					<td colspan="3" class="md-6" valign="top">
+						<div class="column">
+							<table width="100%">
+								<tr>
+									
+									<td class="contents" >
+									   <img class="twelve-column img" src="https://s3.amazonaws.com/paymentus-logos-dev/PAYMENTUS-DEV/N503/logo/logo.jpeg?timestamp=1560114033212">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td colspan="9" valign="top">
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<!-- <td class="contents" th:text="${main.pageName}"/> -->
+									          [2.content goes here]dsadsadsadsadsdsadsadsa saerqr  
+									<!-- </td> -->
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6" valign="top">
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="contents">
+									[11 content goes here ]324234324dsadsasasasasasasasasasasasasasasasasasasasasasasa
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td colspan="6" valign="top">
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="contents">
+									[12.content goes here]dsadsadsadsadsdsadsadsa saerqr 
+								     </td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+			</table>        
+		</td>
+	</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+ <!-- START FOOTER -->
+         <div  class="footer" align="center"> 
+              <table class="viewfooter" align="center">
+                <tr>
+                  <td class="twelve-column">
+                    <span class="apple-link">Paxcel Inc</span>
+                    <br> Important:- <a href="https://google.co.in">Terms & Conditions</a>.
+					<br> Don't like these emails? <a href="https://google.co.in">Unsbscribe</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="twelve-column powered-by">
+                    Powered by <a href="https://google.co.in">Paxcom-Email</a>.
+                  </td>
+                </tr>
+              </table>
+           </div>
+            <!-- END FOOTER -->
+            
+        </div>
+    </center>
+</body>
+</html>
+
+
+
+
+
+

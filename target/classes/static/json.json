@@ -1,0 +1,146 @@
+{
+	"pageName": "OneTimePayment",
+	"View": {
+			"type": "View",
+			"title": "One Time Payment",
+			"children": [{
+					"type": "ViewHeader",
+					"properties": {
+						"xs": 12,
+						"md": 12,
+						"lg": 12
+					},
+					"children": [{
+							"type": "ContainerRow",
+							"properties": {
+								"xs": 12,
+								"md": 12,
+								"lg": 12
+							},
+							"children": [{
+									"type": "Image",
+									"altText": null,
+									"text": "Payment Center",
+									"src": "https://s3.amazonaws.com/paymentus-logos-dev/PAYMENTUS-DEV/N503/logo/logo.jpeg?timestamp=1560114033212",
+									"properties": {
+										"xs": 2,
+										"md": 2,
+										"lg": 6
+									},
+									"width": "50px"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "SplitColumn",
+					"properties": {
+						"xs": 12,
+						"md": 12,
+						"lg": 12
+					},
+					"children": [{
+							"type": "ViewCol",
+							"properties": {
+								"xs": 12,
+								"md": 12,
+								"lg": 9
+							},
+
+							"children": [{
+									"type": "Form",
+									"title": "Payment Method",
+									"properties": {
+										"xs": 12,
+										"md": 12,
+										"lg": 12
+									},
+									"children": [{
+											"type": "Container",
+											"properties": {
+												"xs": 12,
+												"md": 12,
+												"lg": 6
+											},
+											"title": null,
+											"children": [{
+													"type": "ContainerRow",
+													"properties": {
+														"xs": 12,
+														"md": 12,
+														"lg": 12
+													},
+													"children": [
+														{
+															"type": "TextInput",
+															"binding": "LiabilityInfo.AccountNumber",
+															"readonly": true,
+															"label"  : "Account Number",
+															"properties": {
+																"xs": 12,
+																"md": 12,
+																"lg": 12
+															}
+														},
+														{
+															"type": "TextInput",
+															"binding": "LiabilityInfo.AuthToken1",
+															"label"  : "Auth Token",
+															"properties": {
+																"xs": 12,
+																"md": 12,
+																"lg": 12
+															}
+														},
+														{
+															"type": "TextInput",
+															"binding": "LiabilityInfo.name",
+															"label"  : "User name",
+															"properties": {
+																"xs": 12,
+																"md": 12,
+																"lg": 12
+														 }
+														}
+													]
+												}
+											]
+										}
+										]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "ViewFooter",
+			"properties": {
+				"xs": 12,
+				"md": 12,
+				"lg": 12
+			},
+			"children": [{
+					"type": "ContainerRow",
+					"properties": {
+						"xs": 12,
+						"md": 12,
+						"lg": 12
+					},
+					"children": [{
+							"type": "PlainText",
+							"messageKey": "Copyright (c) Paymentus Co. 2019",
+							"properties": {
+								"xs": 12,
+								"md": 12,
+								"lg": 12
+							}
+						}
+					]
+				}
+			]
+		}
+		]
+	}
+}
+
