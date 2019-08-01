@@ -24,7 +24,7 @@ Email Send By Template using json request and json like,
 						{
 						  "type": "PlainText",
 		  "lg": 6,
-		  "messageKey": "Paymentus Co."
+		  "messageKey": "Sushil Co."
 						}
 				    ]
 				}
