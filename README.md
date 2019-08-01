@@ -1,6 +1,8 @@
 # mail-template-thymeleaf
 Email Send By Template using json request and json like,
 
+Request URI:- http://localhost:8080/newJsonRequest
+Request Type:- GET
 
 {
 "pageName": "This is page name",
