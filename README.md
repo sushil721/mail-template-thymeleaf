@@ -79,7 +79,7 @@ Email Send By Template using json request and json like,
 			"lg": 12,
 			"children": [{
 					"type": "PlainText",
-					"messageKey": "Copyright (c) Paymentus Co. 2019",
+					"messageKey": "Copyright (c) Sushil Co. 2019",
 					"lg": 6
 				}
 			]
