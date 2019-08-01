@@ -1,8 +1,8 @@
 {
-		"pageName": "OneTimePayment",
+		"pageName": "This is Page Name",
 		"View": {
 			"type": "View",
-			"title": "One Time Payment",
+			"title": "This is title",
 			"children": [{
 					"type": "ViewHeader",
 					"lg": 12,
@@ -13,14 +13,14 @@
 									"type": "Image",
 									"altText": null,
 									"text": "Payment Center",
-									"src": "https://s3.amazonaws.com/paymentus-logos-dev/PAYMENTUS-DEV/N503/logo/logo.jpeg?timestamp=1560114033212",
+									"src": "https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?cs=srgb&dl=4k-wallpaper-close-up-dew-807598.jpg&fm=jpg",
 									"lg": 6,
 									"width": "48px"
 								},
 								{
 								  "type": "PlainText",
                                   "lg": 6,
-                                  "messageKey": "Paymentus Co."
+                                  "messageKey": "Sushil Co."
 								}
 						    ]
 						}
@@ -76,7 +76,7 @@
 					"lg": 12,
 					"children": [{
 							"type": "PlainText",
-							"messageKey": "Copyright (c) Paymentus Co. 2019",
+							"messageKey": "Copyright (c) Sushil Co. 2019",
 							"lg": 6
 						}
 					]
