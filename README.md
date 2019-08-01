@@ -3,10 +3,10 @@ Email Send By Template using json request and json like,
 
 
 {
-"pageName": "OneTimePayment",
+"pageName": "This is page name",
 "View": {
 	"type": "View",
-	"title": "One Time Payment",
+	"title": "This is title",
 	"children": [{
 			"type": "ViewHeader",
 			"lg": 12,
